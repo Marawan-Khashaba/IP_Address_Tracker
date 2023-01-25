@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="javascript.js" defer></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>IP Address Tracker</h2>
+        <form id="form">
+          <input id="input" placeholder="Search for any IP Address or domain" />
+          <button id="button" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+              <path
+                fill="none"
+                stroke="#FFF"
+                stroke-width="3"
+                d="M2 1l6 6-6 6"
+              />
+            </svg>
+          </button>
+        </form>
+      </section>
+      <section id="ip-info">
+        <div>
+          <h6>IP ADDRESS</h6>
+          <p id="ip-address"></p>
+        </div>
+        <div>
+          <h6>LOCATION</h6>
+          <p id="location"></p>
+        </div>
+        <div>
+          <h6>TIMEZONE</h6>
+          <p id="timezone"></p>
+        </div>
+        <div>
+          <h6>ISP</h6>
+          <p id="isp"></p>
+        </div>
+      </section>
+      <div id="map"></div>
+    </main>
+  </body>
+</html>
